@@ -11,7 +11,14 @@ import SwiftUI
 struct snow_windApp: App {
     var body: some Scene {
         WindowGroup {
+            //16:10
             ContentView()
+                .frame(minWidth: 320,maxWidth:.infinity,
+                       minHeight: 200,maxHeight: .infinity)
         }
+        //隐藏顶部标题栏
+        .windowStyle(HiddenTitleBarWindowStyle())
+        
+        
     }
 }
